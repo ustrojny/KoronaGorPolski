@@ -1,7 +1,7 @@
 
 # A Simple map app with Gatsby Leaflet Starter
 
-A simple mapp App created with Gatsby and Leaflef based on awesome tutorial from Colby Fayock.
+A simple mapp application created with Gatsby and Leaflef based on awesome tutorial from Colby Fayock. It presents the peaks from the Crown of Polish Mountains (Korona Gor Polski) visited by me.
 
 ## LIVE: https://korona-gor-polski.vercel.app/
 
