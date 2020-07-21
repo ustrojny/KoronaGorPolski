@@ -12,3 +12,4 @@ A simple mapp application created with Gatsby and Leaflef based on awesome tutor
 * [Resolve Src](https://github.com/alampros/gatsby-plugin-resolve-src)
 * [Leaflet](https://leafletjs.com/)
 * [React Leaflet](https://react-leaflet.js.org)
+* [GraphCMS](https://graphcms.com/)
