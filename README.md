@@ -13,3 +13,9 @@ A simple mapp application created with Gatsby and Leaflef based on awesome tutor
 * [Leaflet](https://leafletjs.com/)
 * [React Leaflet](https://react-leaflet.js.org)
 * [GraphCMS](https://graphcms.com/)
+
+## Setup
+It's as easy as 1-2-3 :) 
+1. `npm install`
+2. `npm run develop`
+3. Open in the browser: http://localhost:8000/
