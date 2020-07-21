@@ -1,12 +1,12 @@
 {
-  "name": "gatsby-starter-leaflet",
-  "title": "Gatsby Starter Leaflet",
-  "description": "A Gatsby starter with Leafet!",
+  "name": "KGP",
+  "title": "Korona Gór Polski",
+  "description": "Korona Gór Polski with Gatsby starter with Leafet",
   "version": "0.2.4",
   "author": {
-    "name": "Colby Fayock",
-    "email": "hello@colbyfayock.com",
-    "url": "https://twitter.com/colbyfayock"
+    "name": "Ula Strojny",
+    "email": "ustrojny@gmail.com",
+    "url": "https://github.com/ustrojny"
   },
   "dependencies": {
     "gatsby": "^2.23.20",
@@ -16,7 +16,7 @@
     "gatsby-plugin-resolve-src": "^2.1.0",
     "gatsby-plugin-sass": "^2.3.10",
     "gatsby-source-filesystem": "^2.3.18",
-    "gatsby-source-graphql": "^2.6.1",
+    "gatsby-source-graphql": "^2.6.2",
     "leaflet": "^1.6.0",
     "node-sass": "^4.14.1",
     "path": "^0.12.7",
@@ -76,9 +76,9 @@
   "homepage": "https://gatsby-starter-leaflet.netlify.app/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/colbyfayock/gatsby-starter-leaflet"
+    "url": "https://github.com/ustrojny"
   },
   "bugs": {
-    "url": "https://github.com/colbyfayock/gatsby-starter-leaflet/issues"
+    "url": "https://github.com/ustrojny"
   }
 }
