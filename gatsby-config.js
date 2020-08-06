@@ -41,8 +41,7 @@ module.exports = {
         fieldName: 'gcms',
         url: 'https://api-eu-central-1.graphcms.com/v2/ckctot14i2kus01xvhqgw6pqq/master',
       }
-    }
-
-
+    },
   ],
+  pathPrefix: "/KoronaGorPolski",
 };
