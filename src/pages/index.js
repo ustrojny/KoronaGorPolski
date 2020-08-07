@@ -49,13 +49,13 @@ const IndexPage = () => {
       <Container type="content" className="text-center home-start">
         <h2>Korona Gór Polski</h2>
         <h3>Odwiedzone szczyty</h3>
+        <h3>{destinations.length}/28</h3>
         <ul>
           { destinations.map(destination => {
             const {id, name} = destination;
             return <li key={id}>{name}</li>
           })}
         </ul>
-
       </Container>
     </Layout>
   );
