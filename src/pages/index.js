@@ -16,7 +16,8 @@ const DEFAULT_ZOOM = 7;
 
 const IndexPage = () => {
   const { destinations } = useDestinations();
-  console.log('destinations', destinations);
+  //console.log('destinations', destinations);
+  destinations.sort((a, b) => a.peakNumber - b.peakNumber);
   async function mapEffect({ leafletElement: map } = {}) {
     if ( !map ) return;
   }
@@ -52,8 +53,8 @@ const IndexPage = () => {
         <h3>{destinations.length}/28</h3>
         <ul>
           { destinations.map(destination => {
-            const {id, name} = destination;
-            return <li key={id}>{name}</li>
+            const {id, name, peakNumber} = destination;
+            return <li key={id}>{peakNumber}. {name}</li>
           })}
         </ul>
       </Container>

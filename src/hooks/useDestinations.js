@@ -7,6 +7,7 @@ export default function useDestinations() {
         destinations {
           id
           name
+          peakNumber
           location {
             latitude
             longitude
@@ -17,7 +18,6 @@ export default function useDestinations() {
   ` );
 
   let { destinations } = gcms;
-
   return {
     destinations,
   };
