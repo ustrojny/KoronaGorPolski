@@ -16,7 +16,6 @@ const DEFAULT_ZOOM = 7;
 
 const IndexPage = () => {
   const { destinations } = useDestinations();
-  //console.log('destinations', destinations);
   destinations.sort((a, b) => a.peakNumber - b.peakNumber);
   async function mapEffect({ leafletElement: map } = {}) {
     if ( !map ) return;
@@ -35,13 +34,15 @@ const IndexPage = () => {
         <title>Korona Gór Polski</title>
       </Helmet>
 
-      <Map {...mapSettings} style={{ height: '50vh', width: '100%' }}>
+      <Map {...mapSettings} style={{ height: '55vh', width: '100%' }}> 
         { destinations.map(destination => {
-          const {id, name, location} = destination;
+          const {id, name, location, peakNumber} = destination;
           const position = [location.latitude, location.longitude];
           return (
-            <Marker key={id} position={position}>
-              <Popup>{ name }</Popup>
+            <Marker key={id} position={position} >
+              <Popup><h3 style={{textAlign: "center"}}>{ name }</h3>
+              <img src={`/${peakNumber}.jpg`} width="180px" alt="zdjecie szczytu"/>
+              </Popup>
             </Marker>
           );
         })}
