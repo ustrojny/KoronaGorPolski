@@ -21,7 +21,12 @@ It's as easy as 1-2-3 :)
 3. Open in the browser: http://localhost:8000/
 
 ## TO DO
+1. Add some better styling
+2. Add on map not-visited peaks with other marker
+3. Add somewhere winter icon for peaks visited in winter
+
+## DONE
 1. Add photos when clicking on marker or list item
-2. Add some better styling
-3. Add on map not-visited peaks with other marker
-4. Add somewhere winter icon for peaks visited in winter
+2. Sort peak list based on peakNumber
+3. Colour peaks visited/not-visited in section "Info"
+4. Counter for visited/not-visited peaks
