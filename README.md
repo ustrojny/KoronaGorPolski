@@ -19,3 +19,9 @@ It's as easy as 1-2-3 :)
 1. `npm install`
 2. `npm run develop`
 3. Open in the browser: http://localhost:8000/
+
+## TO DO
+1. Add photos when clicking on marker or list item
+2. Add some better styling
+3. Add on map not-visited peaks with other marker
+4. Add somewhere winter icon for peaks visited in winter
