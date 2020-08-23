@@ -66,9 +66,9 @@ const IndexPage = () => {
       <Container type="content" className="text-center home-start">
         <h2>Korona Gór Polski</h2>
         <h3>Odwiedzone szczyty:</h3>
-        <h3>{destinations.length}/28</h3>
+        <h3>{destinations.length}/28 ({Math.round(destinations.length/28*100)}%)</h3>
         <h3>Szczyty zdobyte zimą:</h3>
-        <h3>{countWinterPeaks()}/28</h3>
+        <h3>{countWinterPeaks()}</h3>
         <ul>
           { destinations.map(destination => {
             const {id, name, peakNumber, winter} = destination;
