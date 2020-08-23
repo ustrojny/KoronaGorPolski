@@ -28,6 +28,16 @@ const IndexPage = () => {
     mapEffect,
   };
 
+  function countWinterPeaks() {
+    let winterPeak = 0;
+    for (let i=0; i<destinations.length; i++) {
+      if(destinations[i].winter===true) {
+        winterPeak++;
+      } 
+    }
+    return winterPeak;
+  }
+  
   return (
     <Layout pageName="home">
       <Helmet>
@@ -36,26 +46,37 @@ const IndexPage = () => {
 
       <Map {...mapSettings} style={{ height: '55vh', width: '100%' }}> 
         { destinations.map(destination => {
-          const {id, name, location, peakNumber} = destination;
+          const {id, name, location, peakNumber, winter} = destination;
           const position = [location.latitude, location.longitude];
           return (
             <Marker key={id} position={position} >
-              <Popup><h3 style={{textAlign: "center"}}>{ name }</h3>
+              <Popup><h3 style={{textAlign: "center"}}>
+              { name }
+              {winter===true &&
+              <img className="winter" src="/snowflake.png" width="20px" alt="zimowy szczyt"></img>
+              }
+              </h3>
               <img src={`/${peakNumber}.jpg`} width="180px" alt="zdjecie szczytu"/>
               </Popup>
             </Marker>
           );
         })}
       </Map>
-
+      
       <Container type="content" className="text-center home-start">
         <h2>Korona Gór Polski</h2>
         <h3>Odwiedzone szczyty:</h3>
         <h3>{destinations.length}/28</h3>
+        <h3>Szczyty zdobyte zimą:</h3>
+        <h3>{countWinterPeaks()}/28</h3>
         <ul>
           { destinations.map(destination => {
-            const {id, name, peakNumber} = destination;
-            return <li key={id}>{peakNumber}. {name}</li>
+            const {id, name, peakNumber, winter} = destination;
+              return (<li className="visitedPeaksList" key={id}>{peakNumber}. {name} 
+              {winter===true &&
+              <img className="winter" src="/snowflake.png" width="20px" alt="zimowy szczyt"></img>
+              }
+              </li>)
           })}
         </ul>
       </Container>

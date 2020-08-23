@@ -8,6 +8,7 @@ export default function useDestinations() {
           id
           name
           peakNumber
+          winter
           location {
             latitude
             longitude
