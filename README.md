@@ -31,3 +31,4 @@ It's as easy as 1-2-3 :)
 3. Colour peaks visited/not-visited in section "Info"
 4. Counter for visited/not-visited peaks
 5. Add winter icon for peaks visited in winter on the list and on the popup 
+6. Counter for winter peaks 
