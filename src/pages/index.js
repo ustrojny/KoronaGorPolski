@@ -5,7 +5,9 @@ import { Marker, Popup } from 'react-leaflet';
 import Layout from 'components/Layout';
 import Container from 'components/Container';
 import Map from 'components/Map';
+import VisitedPeaksList from 'components/VisitedPeaksList';
 import { useDestinations } from 'hooks';
+
 
 const LOCATION = {
   lat: 50.064650,
@@ -69,16 +71,7 @@ const IndexPage = () => {
         <h3>{destinations.length}/28 ({Math.round(destinations.length/28*100)}%)</h3>
         <h3>Szczyty zdobyte zimą:</h3>
         <h3>{countWinterPeaks()}</h3>
-        <ul>
-          { destinations.map(destination => {
-            const {id, name, peakNumber, winter} = destination;
-              return (<li className="visitedPeaksList" key={id}>{peakNumber}. {name} 
-              {winter===true &&
-              <img className="winter" src="/snowflake.png" width="20px" alt="zimowy szczyt"></img>
-              }
-              </li>)
-          })}
-        </ul>
+        <VisitedPeaksList />
       </Container>
     </Layout>
   );
