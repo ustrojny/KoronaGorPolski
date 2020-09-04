@@ -24,6 +24,7 @@ It's as easy as 1-2-3 :)
 1. Add some better styling
 2. Add on graphCMS and on map not-visited peaks with different marker
 3. Clean the code
+4. Add feature: after hover on list show pointer on map
 
 ## DONE
 1. Add photos when clicking on marker or list item
