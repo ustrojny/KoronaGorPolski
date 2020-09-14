@@ -25,6 +25,7 @@ It's as easy as 1-2-3 :)
 2. Add on graphCMS and on map not-visited peaks with different marker
 3. Clean the code
 4. Add feature: after hover on list show pointer on map
+5. Add feature: show some info about visited peak after click on list item
 
 ## DONE
 1. Add photos when clicking on marker or list item
